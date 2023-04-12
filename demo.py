@@ -47,14 +47,20 @@ def suggest_emoji(text, model, tokenizer):
 
 # Define your event titles and corresponding emojis (as integer labels)
 event_titles = [
-    "Birthday Party",
-    "Wedding Ceremony",
-    "Job Interview Work",
-    "Dinner Restaurant Reservation",
-    "Call",
-    "Gym Workout Session"]
+    "Birthday", "Party"
+    "Wedding", "Ceremony",
+    "Job", "Interview", "Work",
+    "Dinner", "Restaurant", "Reservation", "Dinning",
+    "Call", "Text",
+    "Gym", "Workout", "Session",
+    "Festival", "Celebration", "Fest",
+    "Write", "Copyright", "Script",
+    "Programming", "Coding", "Writing", "Program", "Code",
+    ]
 
-emojis = [0, 1, 2, 3, 4, 5]  # Map your emojis to integer labels
+emojis = [
+
+] # Map your emojis to integer labels
 
 # Prepare the dataset and dataloader
 dataset = EmojiDataset(event_titles, emojis, tokenizer)
